@@ -1,0 +1,28 @@
+@import url(./style.css);
+
+.categories{
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid #e5e5e5;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.categories__list{
+    display: flex;
+    gap:1rem ;
+
+}
+.products__container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-area: 1rem;
+}
+.products__card{
+   
+  
+}
+.products__card img{
+    height: 346px;
+    border-radius: 5px;
+    gap: 1rem;
+   }
