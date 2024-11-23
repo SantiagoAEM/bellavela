@@ -2,10 +2,9 @@
   "name": "velabella",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "api/server.js",
   "scripts": {
-     "start": "node api/server.js"
-   
+    "start": "node api/server.js"
   },
   "keywords": [],
   "author": "",
