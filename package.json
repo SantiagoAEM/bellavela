@@ -1,15 +1,12 @@
 {
-  "name": "velabella",
+  "name": "bellavela",
   "version": "1.0.0",
-  "description": "",
+  "description": "velas",
   "main": "api/server.js",
   "scripts": {
     "start": "node api/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "json-server": "^1.0.0-beta.3"
+    "json-server": "^0.17.4"
   }
 }
