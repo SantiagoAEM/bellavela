@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000/products";
+const BASE_URL = "http://localhost:3000/product";
 
 // Función para obtener el producto
 const productList = async () => {
