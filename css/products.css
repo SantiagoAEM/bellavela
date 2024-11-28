@@ -1,28 +1,30 @@
 @import url(./style.css);
 
 .categories{
-    display: flex;
-    justify-content: flex-start;
-    border: 1px solid #e5e5e5;
-    align-items: center;
+    display: flex;    
+    border-bottom: 1px  solid #e5e5e5;
     margin-bottom: 2rem;
+    
 }
 .categories__list{
     display: flex;
-    gap:1rem ;
+    flex-wrap: wrap;
+    gap:1rem;
 
 }
 .products__container{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-area: 1rem;
+    grid-template-columns: repeat(auto-fit, 16rem);
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
-.products__card{
-   
-  
-}
+
 .products__card img{
     height: 346px;
     border-radius: 5px;
-    gap: 1rem;
+    gap: 2rem;
    }
+
+
+
