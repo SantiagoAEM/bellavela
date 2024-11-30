@@ -9,10 +9,12 @@ function createCard({id,name, category, price, description,image}) {
     card.innerHTML = `
    
                         <img class="productsCard__img" src="${image}" alt="vela artesanal">
+                        <div class="productsCard__text">
                         <h3 class="productsCard__title">${name}</h3>
                         <h4 class="productsCard__category">${category}</h4>
                         <p class="productsCard__price">$${price}</p>
                         <p class="productsCard__description">${description} </p>
+                        </div>
                         <button class="button__edit" title="Editar" data-id="${id}" popovertarget="editModal">
                             <svg class="icon | icon--edit"><use href="#editIcon" ></use></svg>
                         </button>
