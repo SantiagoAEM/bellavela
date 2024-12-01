@@ -8,7 +8,7 @@ function createProduct({id,name,category,price,image}) {
     card.innerHTML =` 
                     <img class="products__img" src="${image}" alt="vela artesanal" data-id="${id}">
                     <div class="products__text">
-                        <h3 class="products__title>${name}</h3>
+                        <h3 class="products__title">${name}</h3>
                         <h4 class="products__category">${category}</h4>
                         <p class="products__price">$${price}</p>
                     </div>
