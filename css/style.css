@@ -436,7 +436,7 @@ animation-fill-mode:both;
     padding-top: 120px;
     background-color: var(--clr-bgPrimary);
     height: 65vh;
-    width: 40%;
+    width: 80%;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;

@@ -6,6 +6,7 @@
     <title>Productos</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/style.css">
     <svg xmlns="http://www.w3.org/2000/svg" display="none" >
         <defs>
             <symbol id="insta" viewBox="0 0 24 24"> 
@@ -30,17 +31,21 @@
     <header>
 
         <div class="topBar">
-                      
+            <div class="topBar__social">
+                <a href="https://www.instagram.com/">
+                    <svg class="socialNav__icon | grow"><use href="#insta" ></use></svg>
+                </a>           
+            </div>
         </div>
         <div class="navigation">
-            <nav class="| flexSB">
+            <nav class="navi | flexSB">
                 <a href="../index.html">
                     <img class="navigation__img" src="../img/logo-icon.png" 
                     alt="BellaVela" height="60px">
                 </a>
                 <ul role="list" class="navigation__menu | flex">
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/products.html">Productos</a></li>
+                    
                     
                 </ul>
                 <div class="socialNav | flex">
@@ -49,7 +54,30 @@
                     </a>   
             
                 </div>    
-            </nav> 
+            </nav>
+
+            <div class="navbar">                
+                <div class="nav-container">
+                    <div class="nav__logo">
+                        <a href="index.html">
+                            <img class="nav__img" src="../img/logo-icon.png" 
+                            alt="BellaVela" height="60px">
+                        </a>
+                    </div>
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                      <span class="line line1"></span>
+                      <span class="line line2"></span>
+                      <span class="line line3"></span>
+                    </div>  
+                 
+                  <div class="menu-items">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/products.html">Productos</a></li>
+                  </div>
+                </div>
+              </div>
+             
         </div>
     </header>
     <div class="wrapperCenter1--white | marginCenter ">
@@ -65,38 +93,8 @@
         </div> 
         
         <section>
-            <div class="products__container | ">
-                <div class="products__card">
-                    <img src="https://i.postimg.cc/zBsLFZ5F/AAFm6.jpg" alt="vela aromática">
-                    <h3>Osito cariñosito</h3>
-                    <h4>Eventos</h4>
-                    <p>$17500.00</p>
-                </div>
-                <div class="products__card">
-                    <img src="../img/productos/AAFm6hi.jpg" alt="vela aromática">
-                    <h3>Decoración</h3>
-                    <p>$1800.00</p>
-                </div>
-                <div class="products__card">
-                    <img src="../img/productos/AAFm6h.jpg" alt="vela aromática">
-                    <h3>Decoración</h3>
-                    <p>$10000.00</p>
-                </div>
-                <div class="products__card">
-                    <img src="../img/productos/AAFm.jpg" alt="vela aromática">
-                    <h3>Aromática</h3>
-                    <p>$8000.00</p>
-                </div>
-                <div class="products__card">
-                    <img src="../img/productos/AAFm6hi9A.jpg" alt="vela aromática">
-                    <h3>Aromática</h3>
-                    <p>$5000.00</p>
-                </div>
-                <div class="products__card">
-                    <img src="../img/productos/AAFm6.jpg" alt="vela aromática">
-                    <h3>Aromática</h3>
-                    <p>$9000.00</p>
-                </div>
+            <div class="products__container | " data-cardProducts>
+              
             </div>           
 
         </section>
@@ -127,5 +125,6 @@
 
         </footer>
     </div>
+    <script type="module" src="../js/controllers/cardProducts.js"></script>
 </body>
 </html>

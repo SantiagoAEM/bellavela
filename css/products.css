@@ -1,5 +1,3 @@
-@import url(./style.css);
-@import url(.css/reset.css);
 
 .categories{
     display: flex;    
@@ -27,5 +25,21 @@
     gap: 2rem;
    }
 
+/*For mobile landscape*/
+@media (width < 900px) {
 
+    .categories h2{
+        margin-left: 1rem;
+    }
+
+    .categories{
+    flex-direction: column;
+    
+  
+    } 
+    .categories__list{
+        justify-content: center;
+       
+    } 
+}
 

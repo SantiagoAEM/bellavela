@@ -24,9 +24,11 @@ function createCard({id,name, category, price, description,image}) {
                     </div>
     `; 
 
-       // Asigna el evento de eliminación
+       // llama funcion de eliminación
         addDeleteEvent(card, id);
+        // lllama funcion de actualizacion
         actualizarProducts(id, card);
+        
      return card;
     
 }
