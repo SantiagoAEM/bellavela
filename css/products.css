@@ -1,6 +1,7 @@
 
 .categories{
     display: flex;    
+    justify-content: space-between;
     border-bottom: 1px  solid #e5e5e5;
     margin-bottom: 2rem; 
 }
@@ -15,7 +16,10 @@
     display: flex;
     flex-wrap: wrap;
     gap:1rem;
-
+}
+.categories__search{
+    border: 1;
+    justify-items: flex-end;
 }
 .products__container{
     display: grid;

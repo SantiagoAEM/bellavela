@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/products.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
     <svg xmlns="http://www.w3.org/2000/svg" display="none" >
         <defs>
             <symbol id="insta" viewBox="0 0 24 24"> 
@@ -84,12 +85,12 @@
         <div class="categories" id="categories">
             <h2>Categorías</h2>
             <ul role="list" class="categories__list">
-                <li>Todo</li>
-                <li>Aromáticas</li>
-                <li>Decoración</li>
-                <li>Eventos</li>
-                <li></li>
+               <a href=""><li data-category="todo">Todo</li></a>
+               <a href=""><li data-category="aromaticas">Aromáticas</li></a>
+               <a href=""><li data-category="decoracion">Decoración</li></a>
+               <a href=""><li data-category="eventos">Eventos</li></a>
             </ul>
+            <input class="categories__search" type="text" id="searchInput" placeholder="Buscar producto..." />
         </div> 
         
         <section>
