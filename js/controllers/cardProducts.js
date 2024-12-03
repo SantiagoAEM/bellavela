@@ -4,6 +4,7 @@ const dataBox = document.querySelector("[data-cardproducts]");
 
 // Variable para almacenar todos los productos
 let allProducts = [];
+let filteredProducts = [];
 
 // Función para crear la tarjeta de producto
 function createProduct({ id, name, category, price, image }) {
@@ -39,35 +40,34 @@ const fetchAndRenderProducts = async () => {
   try {
     const listProducts = await servicesProduct.productList();
     allProducts = listProducts; // Almacenar los productos para búsqueda
-    renderProducts(allProducts);
+    filteredProducts = allProducts; // Inicializar filteredProducts con todos los productos
+    renderProducts(filteredProducts);
   } catch (error) {
     console.error("Error al obtener productos:", error);
   }
 };
 
 // Función para manejar la búsqueda de productos
-const handleSearch = (event) => {
-  const searchTerm = event.target.value.toLowerCase();
-  let filteredProducts = allProducts;
-
-  // Filtrar por búsqueda
-  if (searchTerm !== "") {
-    filteredProducts = filteredProducts.filter(
-      (product) =>
-        product.name.toLowerCase().includes(searchTerm) ||
-        product.category.toLowerCase().includes(searchTerm)
+const handleSearch = () => {
+  const searchTerm = searchInput.value.toLowerCase();
+  filteredProducts = allProducts.filter((product) => {
+    return (
+      product.name.toLowerCase().includes(searchTerm) ||
+      product.category.toLowerCase().includes(searchTerm)
     );
-  }
+  });
+  applyCategoryFilter(); // Aplicar el filtro de categoría sobre los productos filtrados por nombre
+};
 
-  // Filtrar por categoría seleccionada
+// Función para aplicar el filtro de categoría
+const applyCategoryFilter = () => {
   const selectedCategory = currentCategory;
   if (selectedCategory && selectedCategory !== "todo") {
     filteredProducts = filteredProducts.filter(
       (product) => product.category.toLowerCase() === selectedCategory
     );
   }
-
-  renderProducts(filteredProducts);
+  renderProducts(filteredProducts); // Renderizar productos después de aplicar ambos filtros
 };
 
 // Capturar el evento de búsqueda
@@ -86,7 +86,8 @@ categoriesList.forEach((category) => {
     categoriesList.forEach((item) => item.classList.remove("selected"));
     event.target.classList.add("selected");
 
-    handleSearch({ target: { value: searchInput.value } }); // Filtrar productos por categoría
+    applyCategoryFilter(); // Filtrar los productos por la categoría seleccionada
+    handleSearch(); // Aplicar búsqueda con la categoría seleccionada
   });
 });
 

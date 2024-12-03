@@ -28,6 +28,10 @@ font-weight: var(--fw-900);
     border: 0;
     outline: none;    
 }
+.categories__list li.selected {
+    font-weight: bold;
+    color: var(--clr-dirt);
+}
 
 .products__container{
     display: grid;
