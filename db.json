@@ -7,6 +7,30 @@
       "description": "70gr Vela Natural de Soya & Coco Eco-Amigable\n15 horas de quemado aproximadamente\nNuestras MiniGlowi contienen una cantidad de 70 gr de cera de soya y coco natural, ofreciéndote entre 10 y 15 horas de encendida y una fragancia exquisita. Con sus diseños tiernos y únicos, son el regalo perfecto para consentirte o sorprender a alguien especial. ¿Quieres explorar todas nuestras fragancias?  ",
       "image": "https://i.postimg.cc/zBsLFZ5F/AAFm6.jpg",
       "id": "49ae"
+    },
+    {
+      "name": "Cebra",
+      "category": "Aromática",
+      "price": "123123",
+      "description": "ndote entre 10 y 15 horas de encendida y una fragancia exquisita. Con sus diseños tiernos y únicos, son el regalo perfecto para consentirte o sorprender a alguien especial. ¿Quieres explorar todas nuestras fragancias?",
+      "image": "https://i.postimg.cc/zBsLFZ5F/AAFm6.jpg",
+      "id": "N64JnAX"
+    },
+    {
+      "name": "Gato",
+      "category": "Aromática",
+      "price": "5000",
+      "description": "Con sus diseños tiernos y únicos, son el regalo perfecto para consentirte o sorprender a alguien especial. ¿Quieres explorar todas nuestras fragancias?",
+      "image": "https://i.postimg.cc/zBsLFZ5F/AAFm6.jpg",
+      "id": "n9lJL5B"
+    },
+    {
+      "name": "Angel",
+      "category": "Eventos",
+      "price": "10000",
+      "description": "70gr Vela Natural de Soya & Coco Eco-Amigable 15 horas de quemado aproximadamente Nuestras MiniGlowi contienen una cantidad de 70 gr de cera de soya y coco natural,",
+      "image": "https://i.postimg.cc/zBsLFZ5F/AAFm6.jpg",
+      "id": "P3HZJQe"
     }
   ]
 }
