@@ -19,6 +19,7 @@
     flex-wrap: wrap;
     gap:1rem;
     color: var(--clr-mud);
+    cursor: pointer;
 }
 .categories__list li:hover{
 color: var(--clr-dirt);
